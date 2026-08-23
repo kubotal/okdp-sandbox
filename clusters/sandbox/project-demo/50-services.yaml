@@ -176,7 +176,6 @@ spec:
     dagsGitSync:
       enabled: true
       repo: https://github.com/kubotal/okdp-examples.git
-      branch: feat/event-logs-per-job
       ref: feat/event-logs-per-job
       depth: 1
       subPath: airflow/dags
