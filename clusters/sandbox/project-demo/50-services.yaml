@@ -195,8 +195,8 @@ metadata:
 spec:
   description: JupyterHub of the demo project
   package:
-    repository: quay.io/okdp/platform-packages/jupyterhub
-    tag: 4.3.3-p05
+    repository: quay.io/kubotal/platform-packages/jupyterhub
+    tag: 4.3.3-p06
     interval: 30m
     timeout: 10m
   parameters:
@@ -286,7 +286,7 @@ spec:
               "\n",
               "> Tip: If you already cloned it before, this will **pull the latest changes**.\n",
               "\n",
-              "[✅ Sync OKDP Examples](https://jupyterhub-demo.{{ .Context.ingress.suffix }}/hub/user-redirect/git-pull?repo=https://github.com/okdp/okdp-examples&branch=main&urlpath=lab/tree/okdp-examples/notebooks/index.ipynb)\n",
+              "[✅ Sync OKDP Examples](https://jupyterhub-demo.{{ .Context.ingress.suffix }}/hub/user-redirect/git-pull?repo=https://github.com/kubotal/okdp-examples&branch=feat/event-logs-per-job&urlpath=lab/tree/okdp-examples/notebooks/index.ipynb)\n",
               "\n",
               "---\n",
               "\n",
@@ -337,8 +337,8 @@ metadata:
 spec:
   description: Spark History Server of the demo project
   package:
-    repository: quay.io/okdp/platform-packages/spark-history-server
-    tag: 3.5.1-p06
+    repository: quay.io/kubotal/platform-packages/spark-history-server
+    tag: 3.5.1-p07
     interval: 30m
     timeout: 10m
   parameters:
