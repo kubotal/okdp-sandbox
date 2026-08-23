@@ -338,7 +338,7 @@ spec:
   description: Spark History Server of the demo project
   package:
     repository: quay.io/okdp/platform-packages/spark-history-server
-    tag: 3.5.1-p05
+    tag: 3.5.1-p06
     interval: 30m
     timeout: 10m
   parameters:
