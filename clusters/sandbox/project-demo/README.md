@@ -37,6 +37,10 @@ kubectl apply -f clusters/sandbox/project-demo/60-polaris-catalog-job.yaml
 kubectl -n demo wait --for=condition=complete job/demo-polaris-catalog --timeout=10m
 ```
 
+If a StatefulSet pod stays stuck in a failed init after a Release change
+(seen on the Airflow triggerer), delete the pod: a StatefulSet does not
+replace it on its own.
+
 `20-storage-demo.yaml` extends the storage Release with the project buckets
 and one grant per service. Re-apply `optional/storage/storage.yaml` to return
 to the platform-only store.
